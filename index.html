@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js"></script>
+        <title>Verificador de Idade</title>
+    </head>
+    <body>
+        <header>
+            <h1>Verificador de Idade</h1>
+        </header>
+        <section>
+            <div>
+                <form method="post">
+                    <label>Ano de nascimento:
+                        <input type="number" name="idade" id="idade" min="0" />
+                    </label>
+                    <label>Gênero:
+                        <input type="radio" name="genero" id="masculino" checked />
+                        <label>Masculino</label>
+                        <input type="radio" name="genero" id="feminino" checked />
+                        <label>Feminino</label>
+                    </label>
+                    <input type="button" value="verificar" id="botao" onclick="verificar()" />
+                </form>
+            </div>
+            <div class="resultado">
+                <p id="resultado">Preencha os campos acima para ver o resultado!</p>
+                <img src="./img/imagem_padrao.png" alt="imagem" id="foto">
+            </div>
+        </section>
+        <footer>
+            <p>&copy;JhonatanTTorres</p>
+        </footer>
+    </body>
+</html>
